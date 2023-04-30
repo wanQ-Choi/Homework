@@ -3,7 +3,7 @@ package week2.Kiosk.controller;
 import week2.Kiosk.Util.Retry;
 import week2.Kiosk.View.InputView;
 import week2.Kiosk.domain.Command;
-import week2.Kiosk.domain.CommandDto;
+import week2.Kiosk.domain.dto.CommandDto;
 import week2.Kiosk.service.KioskService;
 
 import java.util.HashMap;
@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class KioskController {
     private final KioskService kioskService;
-    private Map <Command,Runnable> service = new HashMap <>();
+    private Map<Command, Runnable> service = new HashMap<>();
     private final InputView inputView = new InputView();
 
     public KioskController(KioskService kioskService) {
